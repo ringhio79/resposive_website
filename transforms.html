@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .box {
+            box-sizing: border-box;
+            border-radius: 15px;
+            background-color: red;
+            color: white;
+            font-size: 30px;
+            height: 100px;
+            margin: 5px;
+            padding: 25px;
+            text-align: center;
+            transition: all 1s;
+            width:100px;
+        }
+        .smallButton {
+            box-sizing: border-box;
+            background-color: lightgray;
+            width: 100px;
+            height: 50px;
+            font-family: sans-serif;
+            border-radius: 20px;
+            border: 1px gray double;
+            color: grey;
+            padding: 15px;
+            transition: all 0.5s;
+            text-align: center;
+        }
+        .smallButton:hover {
+            background-color: white;
+            transform: scale(1.2, 1.2);
+        }
+        /*.box:hover {*/
+        /*    transform: scale(1.2, 1.2);*/
+        /*}*/
+        .rotated:hover {
+            transform: rotate(15deg);
+            background-color: blue;
+        }
+        .skewed:hover {
+            transform: skew(5deg, 10deg);
+            background-color: green;
+            color: black;
+        }
+        .scaled:hover {
+            transform: scale(2, 0.5);
+            background-color: orange;
+        }
+        .perspective:hover {
+            transform: perspective(300px) rotateY(180deg);
+            background: linear-gradient(to left, yellow, orange);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box rotated">2</div>
+    <div class="box skewed">3</div>
+    <div class="box scaled">4</div>
+    <div class="box perspective">5</div>
+    <div class="smallButton">PRESS</div>
+</body>
+</html>

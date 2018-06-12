@@ -1,0 +1,36 @@
+li {
+    border-bottom: 1px solid #444;
+    background-color: #1D2026;
+    font-size: 30px;
+    padding: 10px 5px;
+    transition-property: background color;
+    transition-duration: 0.5s;
+}
+
+a {
+    color: white;
+    display: block;
+    font-family: sans-serif;
+    text-decoration: none; 
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #555;
+}
+
+@media screen and (min-width: 768px) {
+    li {
+        display: inline-block;
+        font-size: 20px;
+        width: 120px;
+    }
+    ul {
+        background-color: #1D2026;
+        text-align: center
+    }
+}

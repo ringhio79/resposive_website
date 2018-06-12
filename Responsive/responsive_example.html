@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +14,22 @@
             font-size: 2em;
             color: red;
         }
-        
+
         .elephant {
             display: none;
         }
-        
+
         @media screen and (min-width: 376px) {
             .box {
                 background-color: lightgray;
                 color: blue;
             }
+            .elephant {
+                display: inline;
+                width: 50%;
+            }
         }
-        
+
         @media screen and (min-width: 769px) {
             .box {
                 background-color: black;
@@ -36,9 +41,11 @@
         }
     </style>
 </head>
+
 <body>
     <div class="box">I am text<br />
-    <img class="elephant" src="image.jpg" width="400px"></div>
-    
+        <img class="elephant" src="./image.jpg" width="400px"></div>
+
 </body>
+
 </html>
