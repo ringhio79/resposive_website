@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 300px;
+            background-color: lemonchiffon;
+            font-size: 2em;
+            color: red;
+        }
+        
+        .elephant {
+            display: none;
+        }
+        
+        @media screen and (min-width: 376px) {
+            .box {
+                background-color: lightgray;
+                color: blue;
+            }
+        }
+        
+        @media screen and (min-width: 769px) {
+            .box {
+                background-color: black;
+                color: yellow;
+            }
+            .elephant {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I am text<br />
+    <img class="elephant" src="image.jpg" width="400px"></div>
+    
+</body>
+</html>
