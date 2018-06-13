@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            background-color: lightgrey;
+        }
+
+        .div1 {
+            width: 500px;
+            position: relative;
+            
+        }
+        .box {
+            background-color: white;
+            position: absolute;
+            bottom: 10px;
+            height: 55px;
+            width: 500px;
+            opacity: 0.6;
+            z-index: 0;
+        }
+
+        .text {
+            color: black;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 500px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!--CHALLENGE:-->
+    <!--Use the correct positioning on div1 and text to-->
+    <!--overlay the text on the photo-->
+    <!--Bonus: give the text a nice, opaque background-->
+    <!--Bonus Bonus: Only display the text on hover-->
+    <div class="div1">
+        <img src="image.jpg" width="500"></img>
+        <div class="box"><p class="text">Mother elephant and calf</p></div>
+        
+    </div>
+</body>
+
+</html>
