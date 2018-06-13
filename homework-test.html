@@ -14,8 +14,9 @@
         .div1 {
             width: 500px;
             position: relative;
-            
+
         }
+
         .box {
             background-color: white;
             position: absolute;
@@ -26,9 +27,9 @@
             z-index: 0;
         }
 
-        #text {
+        .text {
             color: yellow;
-            /*visibility: hidden;*/
+            opacity: 0;
             font-family: sans-serif;
             font-size: 1.2rem;
             position: absolute;
@@ -36,10 +37,12 @@
             text-align: center;
             width: 500px;
             z-index: 1;
+            transition: 1s;
         }
-        #text:hover {
-            visibility: visible;
-            color: blue;
+
+        .text:hover {
+            opacity: 1;
+            transition: 2s;
         }
     </style>
 </head>
@@ -52,8 +55,10 @@
     <!--Bonus Bonus: Only display the text on hover-->
     <div class="div1">
         <img src="image.jpg" width="500"></img>
-        <div class="box"><p id="text">Mother elephant and calf</p></div>
-        
+        <div class="box">
+            <p class="text">Mother elephant and calf</p>
+        </div>
+
     </div>
 </body>
 
